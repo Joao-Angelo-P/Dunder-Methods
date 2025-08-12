@@ -4,7 +4,6 @@ from exemplo import A, B, C
 class Test_A(unittest.TestCase):
     def setUp(self):
         self.data = list(range(1, 11, 1))
-        self.i = -1
         self.msg = 'metodo implantado incorretamente'
         self.a = A(self.data.copy())
         #self.a.arr.sort(reverse=True) ---for break tests---
