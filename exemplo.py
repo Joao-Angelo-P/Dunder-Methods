@@ -5,7 +5,6 @@ from typing import List, Union
 class A:
     def __init__(self, arr: List):
         self.arr = arr
-        self.i = -1
 
     def __len__(self):
         return len(self.arr)
@@ -17,6 +16,7 @@ class A:
         return True if bool(self.arr) else False
 
     def __iter__(self):
+        self.i = -1
         return self
 
     def __next__(self):
